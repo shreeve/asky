@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "asky"
-  s.version     = `grep '^\s*VERSION' bin/asky | cut -f 2 -d '"'`
+  s.version     = `grep -m 1 '^\s*@version' bin/asky | cut -f 2 -d '"'`
   s.author      = "Steve Shreeve"
   s.email       = "steve.shreeve@gmail.com"
   s.summary     =

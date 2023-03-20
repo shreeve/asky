@@ -8,7 +8,7 @@ require "optparse"
 trap("INT" ) { abort "\n" }
 
 OptionParser.new.instance_eval do
-  @version = "0.5.0"
+  @version = "0.5.1"
   @banner  = "usage: #{program_name} [options] <file|ARGF>"
 
   on "-h", "--help"                   , "Show help and command usage" do Kernel.abort to_s; end
